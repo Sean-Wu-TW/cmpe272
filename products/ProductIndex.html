@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<div class="product">
+ 
+    <header>
+      <hgroup>
+        <h1>products</h1>
+        <h4>Get the lead.</h4>
+      </hgroup>
+    </header>
+
+     <summary>Product Features</summary>
+        <ul>
+          <li><a href="p1.html">Instructor one</a></li>
+          <li><a href="p2.html">Instructor two</a></li>
+          <li><a href="p3.html">Instructor three</a></li>
+          <li><a href="p4.html">Instructor four</a></li>
+          <li><a href="p5.html">Instructor five</a></li>
+          <li><a href="p6.html">Instructor six</a></li>
+          <li><a href="p7.html">Instructor seven</a></li>
+          <li><a href="p8.html">Instructor eight</a></li>
+          <li><a href="p9.html">Instructor nine</a></li>
+          <li><a href="p10.html">Instructor Ten</a></li>
+        </ul>
+   
+    <button>Buy Them all</button>
+    <br>
+    <a href="../index.html">Go back</a>
+    <br>
+    <?php
+    if(count($_COOKIE) > 0) {
+        echo "<h2>Recent visited:</h2>";
+        echo "<br>";
+        foreach($_COOKIE as $v){
+            ?> <a href="<?php echo $v;?>"> <?php echo $v;?> </a><?php
+            echo "<br>";
+        };
+    } else {
+        echo "Cookies are disabled.";
+    }
+    ?>
+    </section>
+   
+  </div>

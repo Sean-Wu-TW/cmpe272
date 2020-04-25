@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/jpg" href="../wee.ico"/>
+
+  <title>Register</title>
+  <link href="../css/bootstrap.min.css"rel="stylesheet" type="text/css" href="">
+  <script type="../js/bootstrap.min.js"></script>
+  <style>
+    hr{
+      display: block;
+      margin-top: auto;
+      margin-bottom: 2em;
+      margin-left: 20em;
+      margin-right: 20em;
+      border-style: inset;
+      border-width: 1px;
+    }
+    body{
+      background-color:blanchedalmond;
+    }
+    input[type=email], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+    input[type=input], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+    input[type=password], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+    input[type=password2], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  margin-top: 6px;
+		  margin-bottom: 16px;
+		  resize: vertical;
+		}
+
+    label{
+        text-align: left;
+    }
+  </style>
+</head>
+
+<body class="text-center">
+  <div class="container pt-5 px-5">
+  <form class="form-signin m-5" method="POST" action="register_finish.php">
+    <img class="mb-4" src="./img/winnie.jpg" alt="" width="72" height="72">
+    <h1 class="h3 m-3 font-weight-normal">Register Account</h1>
+
+    <label for="lfname" style="font-size: 20px;">First name</label>
+    <input type="input" name="firstname" id="lfname" placeholder="First name..." size="50" required autofocus>
+
+    <label for="lfname" style="font-size: 20px;">Last name</label>
+    <input type="input" name="lastname" id="lfname" placeholder="Last name..." size="50" required>
+
+    <label for="address" style="font-size: 20px;">Home address(Optional)</label>
+    <input type="password" name="address" id="address" placeholder="Home address(Optional)" size="100">
+    
+    <label for="inputPassword" style="font-size: 20px;">Phone number</label>
+    <input type="input" name="phone" id="phone" placeholder="123456789" required>
+
+    <label for="inputEmail" style="font-size: 20px;">Email address</label>
+    <input type="email" name="email" id="inputEmail" class="form-control my-3" placeholder="Email address" size="50" >
+    
+    <label for="inputPassword" style="font-size: 20px;">Password</label>
+    <input type="password" name="password" id="inputPassword" placeholder="Password" size="50" required>
+    
+    <label for="inputPassword2" style="font-size: 20px;">Please input password again</label>
+    <input type="password" name="password2" id="inputPassword" placeholder="Password" size="50" required>
+
+    <label for="inputPassword" style="font-size: 20px;">Note</label>
+    <textarea type="note" name="note" placeholder="Note" rows="4" cols="50"></textarea>
+
+
+  <button class="btn btn-dark btn-block" type="submit">Register</button>
+  </div>
+    <hr>
+</form>
+
+
+<!-- <a class="btn" href="./db/register_finish.php" role="button">Register</a> -->
+<a class="btn" href="../index.html" role="button">Go Back</a>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
